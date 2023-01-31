@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  each message in messages
+  div
+    p
+      strong= message.user
+      | says: #{message.text}
+    p Message added: #{message.added}
